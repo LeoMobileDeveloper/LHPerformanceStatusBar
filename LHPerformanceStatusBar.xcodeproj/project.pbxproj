@@ -13,6 +13,11 @@
 		524DFC8B1E114A6E0026199B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524DFC891E114A6E0026199B /* Main.storyboard */; };
 		524DFC8D1E114A6E0026199B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524DFC8C1E114A6E0026199B /* Assets.xcassets */; };
 		524DFC901E114A6E0026199B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524DFC8E1E114A6E0026199B /* LaunchScreen.storyboard */; };
+		524DFCA11E114BC70026199B /* LHPerformanceLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 524DFC9A1E114BC70026199B /* LHPerformanceLabel.m */; };
+		524DFCA21E114BC70026199B /* LHPerformanceMonitorService.m in Sources */ = {isa = PBXBuildFile; fileRef = 524DFC9C1E114BC70026199B /* LHPerformanceMonitorService.m */; };
+		524DFCA31E114BC70026199B /* LHPerformanceStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 524DFC9E1E114BC70026199B /* LHPerformanceStatusBar.m */; };
+		524DFCA41E114BC70026199B /* LHPerformanceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCA01E114BC70026199B /* LHPerformanceUtil.m */; };
+		524DFCA71E114FAF0026199B /* LHPerformanceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCA61E114FAF0026199B /* LHPerformanceConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		524DFC8C1E114A6E0026199B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524DFC8F1E114A6E0026199B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524DFC911E114A6E0026199B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524DFC991E114BC70026199B /* LHPerformanceLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPerformanceLabel.h; sourceTree = "<group>"; };
+		524DFC9A1E114BC70026199B /* LHPerformanceLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPerformanceLabel.m; sourceTree = "<group>"; };
+		524DFC9B1E114BC70026199B /* LHPerformanceMonitorService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPerformanceMonitorService.h; sourceTree = "<group>"; };
+		524DFC9C1E114BC70026199B /* LHPerformanceMonitorService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPerformanceMonitorService.m; sourceTree = "<group>"; };
+		524DFC9D1E114BC70026199B /* LHPerformanceStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPerformanceStatusBar.h; sourceTree = "<group>"; };
+		524DFC9E1E114BC70026199B /* LHPerformanceStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPerformanceStatusBar.m; sourceTree = "<group>"; };
+		524DFC9F1E114BC70026199B /* LHPerformanceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPerformanceUtil.h; sourceTree = "<group>"; };
+		524DFCA01E114BC70026199B /* LHPerformanceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPerformanceUtil.m; sourceTree = "<group>"; };
+		524DFCA51E114FAF0026199B /* LHPerformanceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPerformanceConfig.h; sourceTree = "<group>"; };
+		524DFCA61E114FAF0026199B /* LHPerformanceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPerformanceConfig.m; sourceTree = "<group>"; };
+		524DFCA81E115B170026199B /* LHPerformanceTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPerformanceTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +74,7 @@
 		524DFC7F1E114A6E0026199B /* LHPerformanceStatusBar */ = {
 			isa = PBXGroup;
 			children = (
-				524DFC971E114A740026199B /* New Group */,
+				524DFC981E114BC70026199B /* Classes */,
 				524DFC831E114A6E0026199B /* AppDelegate.h */,
 				524DFC841E114A6E0026199B /* AppDelegate.m */,
 				524DFC861E114A6E0026199B /* ViewController.h */,
@@ -80,12 +96,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		524DFC971E114A740026199B /* New Group */ = {
+		524DFC981E114BC70026199B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				524DFCA81E115B170026199B /* LHPerformanceTypes.h */,
+				524DFC9B1E114BC70026199B /* LHPerformanceMonitorService.h */,
+				524DFC9C1E114BC70026199B /* LHPerformanceMonitorService.m */,
+				524DFCA51E114FAF0026199B /* LHPerformanceConfig.h */,
+				524DFCA61E114FAF0026199B /* LHPerformanceConfig.m */,
+				524DFC991E114BC70026199B /* LHPerformanceLabel.h */,
+				524DFC9A1E114BC70026199B /* LHPerformanceLabel.m */,
+				524DFC9D1E114BC70026199B /* LHPerformanceStatusBar.h */,
+				524DFC9E1E114BC70026199B /* LHPerformanceStatusBar.m */,
+				524DFC9F1E114BC70026199B /* LHPerformanceUtil.h */,
+				524DFCA01E114BC70026199B /* LHPerformanceUtil.m */,
 			);
-			name = "New Group";
-			sourceTree = "<group>";
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -118,6 +145,7 @@
 				TargetAttributes = {
 					524DFC7C1E114A6E0026199B = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = Q57M6S9CWQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -159,8 +187,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				524DFC881E114A6E0026199B /* ViewController.m in Sources */,
+				524DFCA21E114BC70026199B /* LHPerformanceMonitorService.m in Sources */,
 				524DFC851E114A6E0026199B /* AppDelegate.m in Sources */,
+				524DFCA11E114BC70026199B /* LHPerformanceLabel.m in Sources */,
+				524DFCA71E114FAF0026199B /* LHPerformanceConfig.m in Sources */,
+				524DFCA41E114BC70026199B /* LHPerformanceUtil.m in Sources */,
 				524DFC821E114A6E0026199B /* main.m in Sources */,
+				524DFCA31E114BC70026199B /* LHPerformanceStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +313,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q57M6S9CWQ;
 				INFOPLIST_FILE = LHPerformanceStatusBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leo.LHPerformanceStatusBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +326,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q57M6S9CWQ;
 				INFOPLIST_FILE = LHPerformanceStatusBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leo.LHPerformanceStatusBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -317,6 +354,7 @@
 				524DFC961E114A6E0026199B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
